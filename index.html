@@ -39,38 +39,96 @@
   <!-- Skills Section -->
   <section class="max-w-4xl mx-auto p-6 py-12">
     <h2 class="text-3xl font-bold mb-8 text-center">🛠️ Technical Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">☁️</div>
-        <div>Azure</div>
+    
+    <!-- Cloud & Infrastructure -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4 text-blue-400">☁️ Cloud & Infrastructure</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-blue-900 transition duration-300">
+          <div class="font-bold">Azure</div>
+          <div class="text-sm text-gray-400">IaaS, VNet, NSG</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-purple-900 transition duration-300">
+          <div class="font-bold">Terraform</div>
+          <div class="text-sm text-gray-400">Infrastructure as Code</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-orange-900 transition duration-300">
+          <div class="font-bold">Docker</div>
+          <div class="text-sm text-gray-400">Containerization</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-blue-900 transition duration-300">
+          <div class="font-bold">Kubernetes</div>
+          <div class="text-sm text-gray-400">Minikube, Pods</div>
+        </div>
       </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">🏗️</div>
-        <div>Terraform</div>
+    </div>
+
+    <!-- DevOps & Automation -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4 text-green-400">⚙️ DevOps & Automation</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-red-900 transition duration-300">
+          <div class="font-bold">Jenkins</div>
+          <div class="text-sm text-gray-400">CI/CD Pipelines</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-gray-700 transition duration-300">
+          <div class="font-bold">Git</div>
+          <div class="text-sm text-gray-400">Version Control</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-gray-700 transition duration-300">
+          <div class="font-bold">GitHub Actions</div>
+          <div class="text-sm text-gray-400">Automation</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-yellow-900 transition duration-300">
+          <div class="font-bold">Bash Scripting</div>
+          <div class="text-sm text-gray-400">Automation</div>
+        </div>
       </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">📡</div>
-        <div>Wireshark</div>
+    </div>
+
+    <!-- Security & Monitoring -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4 text-red-400">🔒 Security & Monitoring</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-purple-900 transition duration-300">
+          <div class="font-bold">Wireshark</div>
+          <div class="text-sm text-gray-400">Packet Analysis</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-green-900 transition duration-300">
+          <div class="font-bold">Nmap</div>
+          <div class="text-sm text-gray-400">Network Scanning</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-orange-900 transition duration-300">
+          <div class="font-bold">Prometheus</div>
+          <div class="text-sm text-gray-400">Monitoring</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-purple-900 transition duration-300">
+          <div class="font-bold">Grafana</div>
+          <div class="text-sm text-gray-400">Dashboards</div>
+        </div>
       </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">🐳</div>
-        <div>Docker</div>
-      </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">⚓</div>
-        <div>Kubernetes</div>
-      </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">🔍</div>
-        <div>Nmap</div>
-      </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">📚</div>
-        <div>GitHub</div>
-      </div>
-      <div class="bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-700 transition duration-300">
-        <div class="text-2xl mb-2">🐧</div>
-        <div>Linux</div>
+    </div>
+
+    <!-- Programming & Tools -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-cyan-400">💻 Programming & Tools</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-blue-900 transition duration-300">
+          <div class="font-bold">Python</div>
+          <div class="text-sm text-gray-400">FastAPI, Scripting</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-green-900 transition duration-300">
+          <div class="font-bold">Linux</div>
+          <div class="text-sm text-gray-400">System Administration</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-gray-700 transition duration-300">
+          <div class="font-bold">GitHub</div>
+          <div class="text-sm text-gray-400">Repositories, Pages</div>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-yellow-900 transition duration-300">
+          <div class="font-bold">HTML/CSS</div>
+          <div class="text-sm text-gray-400">Web Development</div>
+        </div>
       </div>
     </div>
   </section>
