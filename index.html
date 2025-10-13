@@ -4,251 +4,251 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ridha Gnounou | DevOps & Cloud Engineer</title>
+  <meta name="description" content="DevOps & Cloud Engineer specializing in Infrastructure as Code, Azure, Terraform, Docker, and Kubernetes. Building secure, automated cloud infrastructure.">
+  <meta name="keywords" content="DevOps, Cloud Engineer, Azure, Terraform, Docker, Kubernetes, Cloud Security, Infrastructure as Code">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-white">
 
   <!-- Header/Hero Section -->
-  <header class="text-center py-16 bg-gradient-to-r from-blue-900 to-gray-900">
-    <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-5xl font-bold mb-4">Ridha Gnounou</h1>
-      <p class="text-xl text-gray-300 mb-6">DevOps & Cloud Security Engineer</p>
-      <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-        Building secure, automated cloud infrastructure with Infrastructure as Code
+  <header class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+    <div class="max-w-4xl mx-auto px-6 text-center fade-in">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">Ridha Gnounou</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-8">DevOps & Cloud Security Engineer</p>
+      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        Building secure, automated cloud infrastructure with Infrastructure as Code and modern DevOps practices.
       </p>
+      <div class="mt-12">
+        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover-lift inline-block">
+          View My Projects
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="max-w-4xl mx-auto p-6 py-12">
-    <h2 class="text-3xl font-bold mb-6 text-center">👋 About Me</h2>
-    <div class="bg-gray-800 rounded-xl p-8 shadow-lg">
-      <p class="text-gray-300 leading-relaxed text-lg">
-        I'm a Telecom & IT student passionate about Cloud Security and DevOps. 
-        I build automated cloud infrastructure, implement security monitoring, 
-        and create scalable solutions using modern DevOps practices.
-      </p>
-      <p class="text-gray-300 leading-relaxed text-lg mt-4">
-        Currently focused on Infrastructure as Code, cloud security, and 
-        building professional projects that demonstrate real-world engineering skills.
-      </p>
+  <section class="py-20 bg-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-center fade-in">About Me</h2>
+      <div class="bg-gray-700 rounded-2xl p-8 md:p-12 fade-in hover-lift">
+        <p class="text-xl text-gray-300 leading-relaxed mb-6">
+          I'm a Telecom & IT student passionate about Cloud Security and DevOps. 
+          I build automated cloud infrastructure, implement security monitoring, 
+          and create scalable solutions using modern DevOps practices.
+        </p>
+        <p class="text-xl text-gray-300 leading-relaxed">
+          Currently focused on Infrastructure as Code, cloud security, and 
+          building professional projects that demonstrate real-world engineering skills.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="max-w-4xl mx-auto p-6 py-12">
-    <h2 class="text-3xl font-bold mb-8 text-center">🛠️ Technical Skills</h2>
-    
-    <!-- Cloud & Infrastructure -->
-    <div class="mb-8">
-      <h3 class="text-xl font-semibold mb-4 text-blue-400">☁️ Cloud & Infrastructure</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-blue-900 transition duration-300">
-          <div class="font-bold">Azure</div>
-          <div class="text-sm text-gray-400">IaaS, VNet, NSG</div>
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-16 text-center fade-in">Technical Skills</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Cloud & Infrastructure -->
+        <div class="fade-in hover-lift">
+          <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
+            <div class="text-3xl mb-4">☁️</div>
+            <h3 class="text-xl font-semibold mb-4 text-blue-400">Cloud & Infrastructure</h3>
+            <div class="space-y-2">
+              <div class="bg-blue-900/50 rounded-lg p-3">Azure</div>
+              <div class="bg-purple-900/50 rounded-lg p-3">Terraform</div>
+              <div class="bg-blue-600/50 rounded-lg p-3">Docker</div>
+              <div class="bg-blue-700/50 rounded-lg p-3">Kubernetes</div>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-purple-900 transition duration-300">
-          <div class="font-bold">Terraform</div>
-          <div class="text-sm text-gray-400">Infrastructure as Code</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-orange-900 transition duration-300">
-          <div class="font-bold">Docker</div>
-          <div class="text-sm text-gray-400">Containerization</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-blue-900 transition duration-300">
-          <div class="font-bold">Kubernetes</div>
-          <div class="text-sm text-gray-400">Minikube, Pods</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- DevOps & Automation -->
-    <div class="mb-8">
-      <h3 class="text-xl font-semibold mb-4 text-green-400">⚙️ DevOps & Automation</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-red-900 transition duration-300">
-          <div class="font-bold">Jenkins</div>
-          <div class="text-sm text-gray-400">CI/CD Pipelines</div>
+        <!-- DevOps & Automation -->
+        <div class="fade-in hover-lift">
+          <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
+            <div class="text-3xl mb-4">⚙️</div>
+            <h3 class="text-xl font-semibold mb-4 text-green-400">DevOps & Automation</h3>
+            <div class="space-y-2">
+              <div class="bg-red-600/50 rounded-lg p-3">Jenkins</div>
+              <div class="bg-orange-600/50 rounded-lg p-3">Git</div>
+              <div class="bg-gray-700 rounded-lg p-3">GitHub Actions</div>
+              <div class="bg-yellow-600/50 rounded-lg p-3">Bash Scripting</div>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-gray-700 transition duration-300">
-          <div class="font-bold">Git</div>
-          <div class="text-sm text-gray-400">Version Control</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-gray-700 transition duration-300">
-          <div class="font-bold">GitHub Actions</div>
-          <div class="text-sm text-gray-400">Automation</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-yellow-900 transition duration-300">
-          <div class="font-bold">Bash Scripting</div>
-          <div class="text-sm text-gray-400">Automation</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Security & Monitoring -->
-    <div class="mb-8">
-      <h3 class="text-xl font-semibold mb-4 text-red-400">🔒 Security & Monitoring</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-purple-900 transition duration-300">
-          <div class="font-bold">Wireshark</div>
-          <div class="text-sm text-gray-400">Packet Analysis</div>
+        <!-- Security & Monitoring -->
+        <div class="fade-in hover-lift">
+          <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
+            <div class="text-3xl mb-4">🔒</div>
+            <h3 class="text-xl font-semibold mb-4 text-red-400">Security & Monitoring</h3>
+            <div class="space-y-2">
+              <div class="bg-purple-600/50 rounded-lg p-3">Wireshark</div>
+              <div class="bg-green-600/50 rounded-lg p-3">Nmap</div>
+              <div class="bg-orange-500/50 rounded-lg p-3">Prometheus</div>
+              <div class="bg-purple-500/50 rounded-lg p-3">Grafana</div>
+            </div>
+          </div>
         </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-green-900 transition duration-300">
-          <div class="font-bold">Nmap</div>
-          <div class="text-sm text-gray-400">Network Scanning</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-orange-900 transition duration-300">
-          <div class="font-bold">Prometheus</div>
-          <div class="text-sm text-gray-400">Monitoring</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-purple-900 transition duration-300">
-          <div class="font-bold">Grafana</div>
-          <div class="text-sm text-gray-400">Dashboards</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Programming & Tools -->
-    <div>
-      <h3 class="text-xl font-semibold mb-4 text-cyan-400">💻 Programming & Tools</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-blue-900 transition duration-300">
-          <div class="font-bold">Python</div>
-          <div class="text-sm text-gray-400">FastAPI, Scripting</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-green-900 transition duration-300">
-          <div class="font-bold">Linux</div>
-          <div class="text-sm text-gray-400">System Administration</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-gray-700 transition duration-300">
-          <div class="font-bold">GitHub</div>
-          <div class="text-sm text-gray-400">Repositories, Pages</div>
-        </div>
-        <div class="bg-gray-800 rounded-lg p-3 text-center hover:bg-yellow-900 transition duration-300">
-          <div class="font-bold">HTML/CSS</div>
-          <div class="text-sm text-gray-400">Web Development</div>
+        <!-- Programming & Tools -->
+        <div class="fade-in hover-lift">
+          <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
+            <div class="text-3xl mb-4">💻</div>
+            <h3 class="text-xl font-semibold mb-4 text-cyan-400">Programming & Tools</h3>
+            <div class="space-y-2">
+              <div class="bg-blue-600/50 rounded-lg p-3">Python</div>
+              <div class="bg-green-700/50 rounded-lg p-3">Linux</div>
+              <div class="bg-gray-700 rounded-lg p-3">GitHub</div>
+              <div class="bg-yellow-600/50 rounded-lg p-3">HTML/CSS</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section class="max-w-4xl mx-auto p-6 py-12">
-    <h2 class="text-3xl font-bold mb-8 text-center">💼 Featured Projects</h2>
-    
-    <!-- Cloud Security Lab -->
-    <div class="bg-gray-800 rounded-xl p-6 mb-6 hover:bg-gray-700 transition duration-300">
-      <h3 class="text-xl font-bold mb-3">🔒 Cloud Security Lab – Azure IaaS</h3>
-      <p class="text-gray-300 mb-4">
-        Automated cloud security environment with Infrastructure as Code. Features real-time attack detection, 
-        network monitoring with Wireshark/tshark, and automated infrastructure deployment using Terraform.
-      </p>
-      <div class="mb-4">
-        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm mr-2">Terraform</span>
-        <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm mr-2">Azure</span>
-        <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm mr-2">Wireshark</span>
-        <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm mr-2">Nmap</span>
-        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Linux</span>
+  <section id="projects" class="py-20 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-16 text-center fade-in">Featured Projects</h2>
+      
+      <!-- Cloud Security Lab -->
+      <div class="bg-gray-700 rounded-2xl p-8 mb-12 fade-in hover-lift">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="lg:w-2/3">
+            <h3 class="text-2xl font-bold mb-4 text-blue-400">🔒 Cloud Security Lab – Azure IaaS</h3>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-semibold text-gray-300">Challenge:</h4>
+                <p class="text-gray-400">Building a secure, automated cloud environment to demonstrate real-world attack detection and infrastructure automation.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-300">Solution:</h4>
+                <p class="text-gray-400">Created Infrastructure as Code with Terraform to deploy attacker/defender VMs, implemented real-time network monitoring with Wireshark/tshark.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-300">Impact:</h4>
+                <p class="text-gray-400">Successfully detected port scanning attacks in real-time, demonstrated automated infrastructure deployment.</p>
+              </div>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">Terraform</span>
+              <span class="bg-green-900 text-green-200 px-4 py-2 rounded-full text-sm font-medium">Azure</span>
+              <span class="bg-purple-900 text-purple-200 px-4 py-2 rounded-full text-sm font-medium">Wireshark</span>
+              <span class="bg-red-900 text-red-200 px-4 py-2 rounded-full text-sm font-medium">Nmap</span>
+            </div>
+            <div class="mt-8 flex gap-4">
+              <a href="https://github.com/ridha-gn/cloud-security-lab" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover-lift">
+                View on GitHub
+              </a>
+              <a href="https://youtu.be/y_o1BtTfkjs" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover-lift">
+                Watch Demo
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-1/3 flex items-center justify-center">
+            <div class="bg-gray-600 rounded-lg w-full h-48 flex items-center justify-center">
+              <span class="text-gray-400">Project Screenshot</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <a href="https://github.com/ridha-gn/cloud-security-lab" 
-           class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-3 inline-block transition duration-300">
-          📁 GitHub
-        </a>
-        <a href="https://youtu.be/y_o1BtTfkjs" 
-           class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg inline-block transition duration-300">
-          🎥 Demo Video
-        </a>
-      </div>
-    </div>
 
-    <!-- FastAPI CI/CD Project -->
-    <div class="bg-gray-800 rounded-xl p-6 mb-6 hover:bg-gray-700 transition duration-300">
-      <h3 class="text-xl font-bold mb-3">🐳 FastAPI CI/CD Project</h3>
-      <p class="text-gray-300 mb-4">
-        Containerized FastAPI application with automated CI/CD pipeline. Features Docker containerization, 
-        Jenkins automation, and Kubernetes deployment with Minikube.
-      </p>
-      <div class="mb-4">
-        <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm mr-2">Docker</span>
-        <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm mr-2">Kubernetes</span>
-        <span class="bg-yellow-900 text-yellow-200 px-3 py-1 rounded-full text-sm mr-2">Jenkins</span>
-        <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Python</span>
-      </div>
-      <a href="https://github.com/ridha-gn/fastapi-cicd-project" 
-         class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg inline-block transition duration-300">
-        📁 GitHub
-      </a>
-    </div>
-
-    <!-- Network Monitoring System -->
-    <div class="bg-gray-800 rounded-xl p-6 mb-6 hover:bg-gray-700 transition duration-300">
-      <h3 class="text-xl font-bold mb-3">📊 Network Monitoring System</h3>
-      <p class="text-gray-300 mb-4">
-        Real-time network monitoring with Prometheus and Grafana. Features custom dashboards, 
-        metrics collection, and automated alerting for network infrastructure.
-      </p>
-      <div class="mb-4">
-        <span class="bg-orange-900 text-orange-200 px-3 py-1 rounded-full text-sm mr-2">Prometheus</span>
-        <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm mr-2">Grafana</span>
-        <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Python</span>
-      </div>
-      <a href="https://github.com/ridha-gn/network-monitoring-system" 
-         class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg inline-block transition duration-300">
-        📁 GitHub
-      </a>
-    </div>
-
-    <!-- MyLinuxOps Dashboard -->
-    <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition duration-300">
-      <h3 class="text-xl font-bold mb-3">🐧 MyLinuxOps Dashboard</h3>
-      <p class="text-gray-300 mb-4">
-        Personal Linux automation and monitoring dashboard. Collection of Bash and Python scripts 
-        for system administration, productivity tools, and automation workflows.
-      </p>
-      <div class="mb-4">
-        <span class="bg-yellow-900 text-yellow-200 px-3 py-1 rounded-full text-sm mr-2">Bash</span>
-        <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm mr-2">Python</span>
-        <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">Linux</span>
-      </div>
-      <a href="https://github.com/ridha-gn/MyLinuxOps" 
-         class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg inline-block transition duration-300">
-        📁 GitHub
-      </a>
+      <!-- Additional projects would follow similar structure -->
+      
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="max-w-4xl mx-auto p-6 py-12 text-center">
-    <h2 class="text-3xl font-bold mb-8">📫 Let's Connect</h2>
-    <div class="bg-gray-800 rounded-xl p-8 max-w-2xl mx-auto">
-      <p class="text-gray-300 text-lg mb-6">
-        Interested in collaborating or have questions about my projects?
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="mailto:ridhagnounou.rg@gmail.com" 
-           class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg transition duration-300">
-          📧 Email Me
-        </a>
-        <a href="https://www.linkedin.com/in/ridha-gn" 
-           class="bg-gradient-to-r from-blue-800 to-blue-900 hover:from-blue-900 hover:to-blue-950 text-white px-6 py-3 rounded-lg transition duration-300">
-          💼 LinkedIn
-        </a>
-        <a href="https://github.com/ridha-gn" 
-           class="bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white px-6 py-3 rounded-lg transition duration-300">
-          💻 GitHub
-        </a>
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-16 fade-in">Let's Connect</h2>
+      <div class="bg-gray-800 rounded-2xl p-12 fade-in">
+        <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+          Interested in collaborating, discussing DevOps projects, or exploring opportunities?
+          I'm always open to connecting with fellow engineers and potential collaborators.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+          <a href="mailto:ridhagnounou.rg@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift flex items-center justify-center gap-3">
+            <span>📧</span> Email
+          </a>
+          <a href="https://www.linkedin.com/in/ridha-gn" class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift flex items-center justify-center gap-3">
+            <span>💼</span> LinkedIn
+          </a>
+          <a href="https://github.com/ridha-gn" class="bg-gray-700 hover:bg-gray-800 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift flex items-center justify-center gap-3">
+            <span>💻</span> GitHub
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="text-center text-gray-500 py-8 mt-8 border-t border-gray-800 bg-gray-900">
-    <div class="max-w-4xl mx-auto px-6">
-      <p>© 2025 Ridha Gnounou - DevOps & Cloud Engineer</p>
-      <p class="text-sm mt-2">Built with ☕ and ⚡</p>
+  <footer class="bg-gray-800 py-12 border-t border-gray-700">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-gray-400 text-lg">© 2025 Ridha Gnounou - DevOps & Cloud Engineer</p>
+      <p class="text-gray-500 text-sm mt-3">Built with passion for cloud technology and automation</p>
     </div>
   </footer>
+
+  <script>
+    // Intersection Observer for fade-in animations
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
