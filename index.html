@@ -371,60 +371,46 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Let's Connect</h2>
       
-      <div class="bg-gray-800/50 rounded-2xl p-6 md:p-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
-        <div class="text-center mb-8">
-          <p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Interested in collaborating on DevOps projects, discussing cloud infrastructure, 
-            or exploring potential opportunities? I'm always open to meaningful conversations 
-            about technology and innovation.
+      <div class="bg-gray-800/50 rounded-2xl p-8 md:p-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <div class="text-center">
+          <p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto mb-12">
+            The best way to reach me is via email or LinkedIn. I'm always interested in discussing 
+            DevOps projects, cloud infrastructure, and new opportunities.
           </p>
-        </div>
-        
-        <!-- Contact Methods -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto mb-12">
-          <a href="mailto:ridhagnounou.rg@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white p-5 md:p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3 shadow-lg border border-blue-500">
-            <span class="text-2xl">📧</span>
-            <span class="font-semibold">Email</span>
-            <span class="text-sm text-blue-200">ridhagnounou.rg@gmail.com</span>
-          </a>
           
-          <a href="https://www.linkedin.com/in/ridha-gn" class="bg-blue-800 hover:bg-blue-900 text-white p-5 md:p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3 shadow-lg border border-blue-700">
-            <span class="text-2xl">💼</span>
-            <span class="font-semibold">LinkedIn</span>
-            <span class="text-sm text-blue-200">/in/ridha-gn</span>
-          </a>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
+            <a href="mailto:ridhagnounou.rg@gmail.com" 
+               class="bg-blue-600 hover:bg-blue-700 text-white p-8 rounded-xl btn-hover flex flex-col items-center justify-center gap-4 shadow-lg border border-blue-500 transition-all duration-300">
+              <span class="text-3xl">📧</span>
+              <div>
+                <span class="font-semibold text-lg block">Email Me</span>
+                <span class="text-blue-200 text-sm block mt-1">ridhagnounou.rg@gmail.com</span>
+              </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/ridha-gn" 
+               class="bg-blue-800 hover:bg-blue-900 text-white p-8 rounded-xl btn-hover flex flex-col items-center justify-center gap-4 shadow-lg border border-blue-700 transition-all duration-300">
+              <span class="text-3xl">💼</span>
+              <div>
+                <span class="font-semibold text-lg block">LinkedIn</span>
+                <span class="text-blue-200 text-sm block mt-1">Connect Professionally</span>
+              </div>
+            </a>
+          </div>
           
-          <a href="https://github.com/ridha-gn" class="bg-gray-700 hover:bg-gray-800 text-white p-5 md:p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3 shadow-lg border border-gray-600">
-            <span class="text-2xl">💻</span>
-            <span class="font-semibold">GitHub</span>
-            <span class="text-sm text-gray-300">@ridha-gn</span>
-          </a>
-        </div>
-        
-        <!-- Contact Form -->
-        <div class="pt-8 border-t border-gray-700">
-          <h3 class="text-2xl font-semibold mb-6 text-center text-gray-300">Send me a message</h3>
-          <form class="max-w-md mx-auto space-y-4" id="contactForm">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
-              <input type="text" id="name" name="name" required 
-                     class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300">
+          <div class="mt-12 pt-8 border-t border-gray-700">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-400">
+              <a href="https://github.com/ridha-gn" class="flex items-center gap-2 hover:text-white transition-colors">
+                <span class="text-xl">💻</span>
+                <span>GitHub</span>
+              </a>
+              <div class="hidden sm:block text-gray-600">•</div>
+              <div class="text-center">
+                <p class="font-medium">I typically respond within 24 hours</p>
+                <p class="text-sm mt-1">Looking forward to connecting with you!</p>
+              </div>
             </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Your Email</label>
-              <input type="email" id="email" name="email" required 
-                     class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300">
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Your Message</label>
-              <textarea id="message" name="message" rows="4" required 
-                        class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none"></textarea>
-            </div>
-            <button type="submit" 
-                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold btn-hover shadow-lg transition-all duration-300 flex items-center justify-center gap-2">
-              <span>📨</span> Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -465,35 +451,7 @@
       });
     });
 
-    // Contact form handling
-    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Get form data
-      const formData = new FormData(this);
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const message = formData.get('message');
-      
-      // Simulate form submission
-      const button = this.querySelector('button[type="submit"]');
-      const originalText = button.innerHTML;
-      
-      button.innerHTML = '📤 Sending...';
-      button.disabled = true;
-      
-      setTimeout(() => {
-        // Show success message
-        alert(`Thank you, ${name}! Your message has been sent successfully. I'll get back to you at ${email} soon.`);
-        
-        // Reset form
-        this.reset();
-        button.innerHTML = originalText;
-        button.disabled = false;
-      }, 1500);
-    });
-
-    // Mobile menu toggle (basic implementation)
+    // Mobile menu toggle
     document.querySelector('button.md\\:hidden')?.addEventListener('click', function() {
       alert('Mobile menu would open here. In a full implementation, this would show/hide a mobile navigation menu.');
     });
