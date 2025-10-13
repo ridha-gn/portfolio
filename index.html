@@ -4,21 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ridha Gnounou | DevOps & Cloud Engineer</title>
-  <meta name="description" content="DevOps & Cloud Engineer specializing in Infrastructure as Code, Azure, Terraform, Docker, and Kubernetes. Building secure, automated cloud infrastructure.">
-  <meta name="keywords" content="DevOps, Cloud Engineer, Azure, Terraform, Docker, Kubernetes, Cloud Security, Infrastructure as Code">
+  <meta name="description" content="Ridha Gnounou - DevOps & Cloud Engineer specializing in Infrastructure as Code, Azure, Terraform, Docker, Kubernetes. Building automated cloud infrastructure and security solutions.">
+  <meta name="keywords" content="DevOps, Cloud Engineer, Azure, Terraform, Docker, Kubernetes, Cloud Security, Infrastructure as Code, CI/CD">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-    
-    body {
+    * {
       font-family: 'Inter', sans-serif;
     }
     
     .fade-in {
       opacity: 0;
       transform: translateY(30px);
-      transition: all 0.8s ease;
+      transition: all 0.6s ease-out;
     }
     
     .fade-in.visible {
@@ -26,115 +27,146 @@
       transform: translateY(0);
     }
     
-    .hover-lift {
+    .card-hover {
       transition: all 0.3s ease;
     }
     
-    .hover-lift:hover {
+    .card-hover:hover {
       transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
     
-    .gradient-text {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .btn-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e1b4b 100%);
     }
   </style>
 </head>
 <body class="bg-gray-900 text-white">
 
-  <!-- Header/Hero Section -->
-  <header class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-white">Ridha Gnounou</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+          <a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a>
+          <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+          <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="min-h-screen flex items-center justify-center gradient-bg pt-16">
     <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">Ridha Gnounou</h1>
-      <p class="text-xl md:text-2xl text-gray-300 mb-8">DevOps & Cloud Security Engineer</p>
-      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-        Building secure, automated cloud infrastructure with Infrastructure as Code and modern DevOps practices.
+      <!-- Profile Picture Placeholder -->
+      <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
+        RG
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Ridha Gnounou</h1>
+      <p class="text-xl md:text-2xl text-blue-200 mb-8">DevOps & Cloud Security Engineer</p>
+      <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12">
+        Building secure, automated cloud infrastructure with Infrastructure as Code, 
+        containerization, and modern DevOps practices.
       </p>
-      <div class="mt-12">
-        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover-lift inline-block">
-          View My Projects
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold btn-hover">
+          View My Work
+        </a>
+        <a href="#contact" class="border border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold btn-hover">
+          Get In Touch
         </a>
       </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="py-20 bg-gray-800">
+  <section id="about" class="py-20 bg-gray-800">
     <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-12 text-center fade-in">About Me</h2>
-      <div class="bg-gray-700 rounded-2xl p-8 md:p-12 fade-in hover-lift">
-        <p class="text-xl text-gray-300 leading-relaxed mb-6">
-          I'm a Telecom & IT student passionate about Cloud Security and DevOps. 
-          I build automated cloud infrastructure, implement security monitoring, 
-          and create scalable solutions using modern DevOps practices.
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in">About Me</h2>
+      <div class="bg-gray-700 rounded-2xl p-8 md:p-12 fade-in card-hover">
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
+          I'm a passionate Telecom & IT student with deep expertise in Cloud Security and DevOps engineering. 
+          I specialize in building automated infrastructure, implementing robust security monitoring, 
+          and creating scalable solutions using cutting-edge technologies.
         </p>
-        <p class="text-xl text-gray-300 leading-relaxed">
-          Currently focused on Infrastructure as Code, cloud security, and 
-          building professional projects that demonstrate real-world engineering skills.
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          My focus is on Infrastructure as Code, cloud security best practices, and developing 
+          professional projects that solve real-world engineering challenges in cloud environments.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="py-20 bg-gray-900">
+  <section id="skills" class="py-20 bg-gray-900">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-16 text-center fade-in">Technical Skills</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in">Technical Skills</h2>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Cloud & Infrastructure -->
-        <div class="fade-in hover-lift">
+        <div class="fade-in card-hover">
           <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
             <div class="text-3xl mb-4">☁️</div>
             <h3 class="text-xl font-semibold mb-4 text-blue-400">Cloud & Infrastructure</h3>
-            <div class="space-y-2">
-              <div class="bg-blue-900/50 rounded-lg p-3">Azure</div>
-              <div class="bg-purple-900/50 rounded-lg p-3">Terraform</div>
-              <div class="bg-blue-600/50 rounded-lg p-3">Docker</div>
-              <div class="bg-blue-700/50 rounded-lg p-3">Kubernetes</div>
+            <div class="space-y-3">
+              <div class="bg-blue-900/50 rounded-lg p-3 text-sm">Azure IaaS</div>
+              <div class="bg-purple-900/50 rounded-lg p-3 text-sm">Terraform</div>
+              <div class="bg-blue-600/50 rounded-lg p-3 text-sm">Docker</div>
+              <div class="bg-blue-700/50 rounded-lg p-3 text-sm">Kubernetes</div>
             </div>
           </div>
         </div>
 
         <!-- DevOps & Automation -->
-        <div class="fade-in hover-lift">
+        <div class="fade-in card-hover">
           <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
             <div class="text-3xl mb-4">⚙️</div>
             <h3 class="text-xl font-semibold mb-4 text-green-400">DevOps & Automation</h3>
-            <div class="space-y-2">
-              <div class="bg-red-600/50 rounded-lg p-3">Jenkins</div>
-              <div class="bg-orange-600/50 rounded-lg p-3">Git</div>
-              <div class="bg-gray-700 rounded-lg p-3">GitHub Actions</div>
-              <div class="bg-yellow-600/50 rounded-lg p-3">Bash Scripting</div>
+            <div class="space-y-3">
+              <div class="bg-red-600/50 rounded-lg p-3 text-sm">Jenkins CI/CD</div>
+              <div class="bg-orange-600/50 rounded-lg p-3 text-sm">Git & GitHub</div>
+              <div class="bg-gray-700 rounded-lg p-3 text-sm">GitHub Actions</div>
+              <div class="bg-yellow-600/50 rounded-lg p-3 text-sm">Bash Scripting</div>
             </div>
           </div>
         </div>
 
         <!-- Security & Monitoring -->
-        <div class="fade-in hover-lift">
+        <div class="fade-in card-hover">
           <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
             <div class="text-3xl mb-4">🔒</div>
             <h3 class="text-xl font-semibold mb-4 text-red-400">Security & Monitoring</h3>
-            <div class="space-y-2">
-              <div class="bg-purple-600/50 rounded-lg p-3">Wireshark</div>
-              <div class="bg-green-600/50 rounded-lg p-3">Nmap</div>
-              <div class="bg-orange-500/50 rounded-lg p-3">Prometheus</div>
-              <div class="bg-purple-500/50 rounded-lg p-3">Grafana</div>
+            <div class="space-y-3">
+              <div class="bg-purple-600/50 rounded-lg p-3 text-sm">Wireshark</div>
+              <div class="bg-green-600/50 rounded-lg p-3 text-sm">Nmap Scanning</div>
+              <div class="bg-orange-500/50 rounded-lg p-3 text-sm">Prometheus</div>
+              <div class="bg-purple-500/50 rounded-lg p-3 text-sm">Grafana</div>
             </div>
           </div>
         </div>
 
         <!-- Programming & Tools -->
-        <div class="fade-in hover-lift">
+        <div class="fade-in card-hover">
           <div class="bg-gray-800 rounded-xl p-6 text-center h-full">
             <div class="text-3xl mb-4">💻</div>
             <h3 class="text-xl font-semibold mb-4 text-cyan-400">Programming & Tools</h3>
-            <div class="space-y-2">
-              <div class="bg-blue-600/50 rounded-lg p-3">Python</div>
-              <div class="bg-green-700/50 rounded-lg p-3">Linux</div>
-              <div class="bg-gray-700 rounded-lg p-3">GitHub</div>
-              <div class="bg-yellow-600/50 rounded-lg p-3">HTML/CSS</div>
+            <div class="space-y-3">
+              <div class="bg-blue-600/50 rounded-lg p-3 text-sm">Python</div>
+              <div class="bg-green-700/50 rounded-lg p-3 text-sm">Linux</div>
+              <div class="bg-gray-700 rounded-lg p-3 text-sm">GitHub</div>
+              <div class="bg-yellow-600/50 rounded-lg p-3 text-sm">HTML/CSS</div>
             </div>
           </div>
         </div>
@@ -145,88 +177,168 @@
   <!-- Projects Section -->
   <section id="projects" class="py-20 bg-gray-800">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-16 text-center fade-in">Featured Projects</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in">Featured Projects</h2>
       
       <!-- Cloud Security Lab -->
-      <div class="bg-gray-700 rounded-2xl p-8 mb-12 fade-in hover-lift">
-        <div class="flex flex-col lg:flex-row gap-8">
+      <article class="bg-gray-700 rounded-2xl p-8 mb-12 fade-in card-hover">
+        <div class="flex flex-col lg:flex-row gap-8 items-center">
           <div class="lg:w-2/3">
             <h3 class="text-2xl font-bold mb-4 text-blue-400">🔒 Cloud Security Lab – Azure IaaS</h3>
-            <div class="space-y-4">
+            
+            <div class="space-y-4 mb-6">
               <div>
-                <h4 class="font-semibold text-gray-300">Challenge:</h4>
-                <p class="text-gray-400">Building a secure, automated cloud environment to demonstrate real-world attack detection and infrastructure automation.</p>
+                <h4 class="font-semibold text-gray-300 mb-2">🚩 Challenge:</h4>
+                <p class="text-gray-400">Building a secure, automated cloud environment to demonstrate real-world attack detection and infrastructure automation while working within Azure Student subscription limitations.</p>
               </div>
               <div>
-                <h4 class="font-semibold text-gray-300">Solution:</h4>
-                <p class="text-gray-400">Created Infrastructure as Code with Terraform to deploy attacker/defender VMs, implemented real-time network monitoring with Wireshark/tshark.</p>
+                <h4 class="font-semibold text-gray-300 mb-2">💡 Solution:</h4>
+                <p class="text-gray-400">Created Infrastructure as Code with Terraform to deploy attacker/defender VMs in private network, implemented real-time network monitoring with Wireshark/tshark, and automated security scanning with Nmap.</p>
               </div>
               <div>
-                <h4 class="font-semibold text-gray-300">Impact:</h4>
-                <p class="text-gray-400">Successfully detected port scanning attacks in real-time, demonstrated automated infrastructure deployment.</p>
+                <h4 class="font-semibold text-gray-300 mb-2">🎯 Impact:</h4>
+                <p class="text-gray-400">Successfully detected port scanning attacks in real-time, demonstrated automated infrastructure deployment with Terraform, and created reusable security monitoring patterns for cloud environments.</p>
               </div>
             </div>
-            <div class="mt-6 flex flex-wrap gap-3">
+            
+            <div class="flex flex-wrap gap-3 mb-6">
               <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">Terraform</span>
               <span class="bg-green-900 text-green-200 px-4 py-2 rounded-full text-sm font-medium">Azure</span>
               <span class="bg-purple-900 text-purple-200 px-4 py-2 rounded-full text-sm font-medium">Wireshark</span>
               <span class="bg-red-900 text-red-200 px-4 py-2 rounded-full text-sm font-medium">Nmap</span>
+              <span class="bg-gray-600 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">Linux</span>
             </div>
-            <div class="mt-8 flex gap-4">
-              <a href="https://github.com/ridha-gn/cloud-security-lab" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover-lift">
-                View on GitHub
+            
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/ridha-gn/cloud-security-lab" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
+                <span>📁</span> GitHub Repository
               </a>
-              <a href="https://youtu.be/y_o1BtTfkjs" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover-lift">
-                Watch Demo
+              <a href="https://youtu.be/y_o1BtTfkjs" class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
+                <span>🎥</span> Demo Video
               </a>
             </div>
           </div>
-          <div class="lg:w-1/3 flex items-center justify-center">
-            <div class="bg-gray-600 rounded-lg w-full h-48 flex items-center justify-center">
-              <span class="text-gray-400">Project Screenshot</span>
+          
+          <div class="lg:w-1/3">
+            <div class="bg-gray-600 rounded-xl w-full h-64 flex items-center justify-center border-2 border-dashed border-gray-500">
+              <div class="text-center text-gray-400">
+                <div class="text-4xl mb-2">🖼️</div>
+                <p class="text-sm">Project Screenshot</p>
+                <p class="text-xs mt-1">(Add actual screenshot)</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </article>
 
-      <!-- Additional projects would follow similar structure -->
-      
+      <!-- FastAPI CI/CD Project -->
+      <article class="bg-gray-700 rounded-2xl p-8 mb-12 fade-in card-hover">
+        <div class="flex flex-col lg:flex-row gap-8 items-center">
+          <div class="lg:w-2/3">
+            <h3 class="text-2xl font-bold mb-4 text-green-400">🐳 FastAPI CI/CD Project</h3>
+            
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-semibold text-gray-300 mb-2">🚩 Challenge:</h4>
+                <p class="text-gray-400">Building a complete CI/CD pipeline for a modern web application with containerization and automated deployment to demonstrate end-to-end DevOps workflow.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-300 mb-2">💡 Solution:</h4>
+                <p class="text-gray-400">Developed a FastAPI application, containerized with Docker, automated testing and deployment with Jenkins, and deployed to Kubernetes cluster using Minikube with proper service configurations.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-300 mb-2">🎯 Impact:</h4>
+                <p class="text-gray-400">Created a fully automated deployment pipeline reducing manual deployment time by 80%, implemented container best practices, and demonstrated comprehensive DevOps workflow from development to production.</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">Docker</span>
+              <span class="bg-green-900 text-green-200 px-4 py-2 rounded-full text-sm font-medium">Kubernetes</span>
+              <span class="bg-yellow-900 text-yellow-200 px-4 py-2 rounded-full text-sm font-medium">Jenkins</span>
+              <span class="bg-cyan-900 text-cyan-200 px-4 py-2 rounded-full text-sm font-medium">Python</span>
+              <span class="bg-gray-600 text-gray-200 px-4 py-2 rounded-full text-sm font-medium">FastAPI</span>
+            </div>
+            
+            <a href="https://github.com/ridha-gn/fastapi-cicd-project" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 w-fit">
+              <span>📁</span> GitHub Repository
+            </a>
+          </div>
+          
+          <div class="lg:w-1/3">
+            <div class="bg-gray-600 rounded-xl w-full h-64 flex items-center justify-center border-2 border-dashed border-gray-500">
+              <div class="text-center text-gray-400">
+                <div class="text-4xl mb-2">🐳</div>
+                <p class="text-sm">Docker & K8s Setup</p>
+                <p class="text-xs mt-1">(Add architecture diagram)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Add more projects following the same structure -->
+
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="py-20 bg-gray-900">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-16 fade-in">Let's Connect</h2>
-      <div class="bg-gray-800 rounded-2xl p-12 fade-in">
-        <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-          Interested in collaborating, discussing DevOps projects, or exploring opportunities?
-          I'm always open to connecting with fellow engineers and potential collaborators.
-        </p>
+  <section id="contact" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in">Let's Connect</h2>
+      
+      <div class="bg-gray-800 rounded-2xl p-8 md:p-12 fade-in card-hover">
+        <div class="text-center mb-8">
+          <p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+            Interested in collaborating on DevOps projects, discussing cloud infrastructure, 
+            or exploring potential opportunities? I'm always open to meaningful conversations.
+          </p>
+        </div>
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
-          <a href="mailto:ridhagnounou.rg@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift flex items-center justify-center gap-3">
-            <span>📧</span> Email
+          <a href="mailto:ridhagnounou.rg@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3">
+            <span class="text-2xl">📧</span>
+            <span class="font-semibold">Email</span>
+            <span class="text-sm text-blue-200">ridhagnounou.rg@gmail.com</span>
           </a>
-          <a href="https://www.linkedin.com/in/ridha-gn" class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift flex items-center justify-center gap-3">
-            <span>💼</span> LinkedIn
+          
+          <a href="https://www.linkedin.com/in/ridha-gn" class="bg-blue-800 hover:bg-blue-900 text-white p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3">
+            <span class="text-2xl">💼</span>
+            <span class="font-semibold">LinkedIn</span>
+            <span class="text-sm text-blue-200">/in/ridha-gn</span>
           </a>
-          <a href="https://github.com/ridha-gn" class="bg-gray-700 hover:bg-gray-800 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover-lift flex items-center justify-center gap-3">
-            <span>💻</span> GitHub
+          
+          <a href="https://github.com/ridha-gn" class="bg-gray-700 hover:bg-gray-800 text-white p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3">
+            <span class="text-2xl">💻</span>
+            <span class="font-semibold">GitHub</span>
+            <span class="text-sm text-gray-300">@ridha-gn</span>
           </a>
+        </div>
+        
+        <!-- Simple Contact Form -->
+        <div class="mt-12 pt-8 border-t border-gray-700">
+          <h3 class="text-xl font-semibold mb-6 text-center text-gray-300">Send me a message</h3>
+          <form class="max-w-md mx-auto space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500">
+            <input type="email" placeholder="Your Email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500">
+            <textarea placeholder="Your Message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500"></textarea>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold btn-hover">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-gray-800 py-12 border-t border-gray-700">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <p class="text-gray-400 text-lg">© 2025 Ridha Gnounou - DevOps & Cloud Engineer</p>
-      <p class="text-gray-500 text-sm mt-3">Built with passion for cloud technology and automation</p>
+  <footer class="bg-gray-800 py-8 border-t border-gray-700">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-gray-400">© 2025 Ridha Gnounou - DevOps & Cloud Engineer</p>
+      <p class="text-gray-500 text-sm mt-2">Built with passion for cloud technology and automation</p>
     </div>
   </footer>
 
   <script>
-    // Intersection Observer for fade-in animations
+    // Fade-in animation on scroll
     const fadeElements = document.querySelectorAll('.fade-in');
     
     const observer = new IntersectionObserver((entries) => {
@@ -239,14 +351,24 @@
     
     fadeElements.forEach(el => observer.observe(el));
 
-    // Smooth scrolling for navigation
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
       });
+    });
+
+    // Simple form handling (for demonstration)
+    document.querySelector('form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! In a real implementation, this would connect to a backend service.');
     });
   </script>
 
