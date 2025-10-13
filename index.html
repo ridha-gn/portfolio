@@ -1,1 +1,503 @@
-<h1>Ridha Gnounou - DevOps Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ridha Gnounou | DevOps & Cloud Engineer</title>
+  <meta name="description" content="Ridha Gnounou - DevOps & Cloud Engineer specializing in Infrastructure as Code, Azure, Terraform, Docker, Kubernetes. Building automated cloud infrastructure and security solutions.">
+  <meta name="keywords" content="DevOps, Cloud Engineer, Azure, Terraform, Docker, Kubernetes, Cloud Security, Infrastructure as Code, CI/CD">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .btn-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e1b4b 100%);
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-padding {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      
+      .mobile-text-center {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-white">Ridha Gnounou</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+          <a href="#skills" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a>
+          <a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
+          <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-gray-300 hover:text-white transition-colors duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="min-h-screen flex items-center justify-center gradient-bg pt-16 mobile-padding">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center fade-in">
+      <!-- Profile Picture -->
+      <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-2xl">
+        RG
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 gradient-text">Ridha Gnounou</h1>
+      <p class="text-xl md:text-2xl text-blue-200 mb-8 font-medium">DevOps & Cloud Security Engineer</p>
+      <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12">
+        Building secure, automated cloud infrastructure with <span class="text-blue-400 font-semibold">Infrastructure as Code</span>, 
+        containerization, and modern DevOps practices.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold btn-hover shadow-lg">
+          🚀 View My Work
+        </a>
+        <a href="#contact" class="border border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold btn-hover">
+          📬 Get In Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800 mobile-padding">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in gradient-text">About Me</h2>
+      <div class="bg-gray-700/50 rounded-2xl p-8 md:p-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
+          I'm a passionate <span class="text-blue-400 font-semibold">Telecom & IT student</span> with deep expertise in 
+          <span class="text-green-400 font-semibold">Cloud Security</span> and 
+          <span class="text-purple-400 font-semibold">DevOps engineering</span>. 
+          I specialize in building automated infrastructure, implementing robust security monitoring, 
+          and creating scalable solutions using cutting-edge technologies.
+        </p>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          My focus is on <span class="text-orange-400 font-semibold">Infrastructure as Code</span>, 
+          cloud security best practices, and developing professional projects that solve 
+          real-world engineering challenges in cloud environments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-900 mobile-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Technical Skills</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Cloud & Infrastructure -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+            <div class="text-3xl mb-4">☁️</div>
+            <h3 class="text-xl font-semibold mb-4 text-blue-400">Cloud & Infrastructure</h3>
+            <div class="space-y-3">
+              <div class="bg-blue-900/30 rounded-xl p-3 text-sm border border-blue-800/50">Azure IaaS</div>
+              <div class="bg-purple-900/30 rounded-xl p-3 text-sm border border-purple-800/50">Terraform</div>
+              <div class="bg-blue-600/30 rounded-xl p-3 text-sm border border-blue-500/50">Docker</div>
+              <div class="bg-blue-700/30 rounded-xl p-3 text-sm border border-blue-600/50">Kubernetes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Automation -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+            <div class="text-3xl mb-4">⚙️</div>
+            <h3 class="text-xl font-semibold mb-4 text-green-400">DevOps & Automation</h3>
+            <div class="space-y-3">
+              <div class="bg-red-600/30 rounded-xl p-3 text-sm border border-red-500/50">Jenkins CI/CD</div>
+              <div class="bg-orange-600/30 rounded-xl p-3 text-sm border border-orange-500/50">Git & GitHub</div>
+              <div class="bg-gray-700 rounded-xl p-3 text-sm border border-gray-600">GitHub Actions</div>
+              <div class="bg-yellow-600/30 rounded-xl p-3 text-sm border border-yellow-500/50">Bash Scripting</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security & Monitoring -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+            <div class="text-3xl mb-4">🔒</div>
+            <h3 class="text-xl font-semibold mb-4 text-red-400">Security & Monitoring</h3>
+            <div class="space-y-3">
+              <div class="bg-purple-600/30 rounded-xl p-3 text-sm border border-purple-500/50">Wireshark</div>
+              <div class="bg-green-600/30 rounded-xl p-3 text-sm border border-green-500/50">Nmap Scanning</div>
+              <div class="bg-orange-500/30 rounded-xl p-3 text-sm border border-orange-400/50">Prometheus</div>
+              <div class="bg-purple-500/30 rounded-xl p-3 text-sm border border-purple-400/50">Grafana</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming & Tools -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-800 rounded-2xl p-6 text-center h-full border border-gray-700">
+            <div class="text-3xl mb-4">💻</div>
+            <h3 class="text-xl font-semibold mb-4 text-cyan-400">Programming & Tools</h3>
+            <div class="space-y-3">
+              <div class="bg-blue-600/30 rounded-xl p-3 text-sm border border-blue-500/50">Python</div>
+              <div class="bg-green-700/30 rounded-xl p-3 text-sm border border-green-600/50">Linux</div>
+              <div class="bg-gray-700 rounded-xl p-3 text-sm border border-gray-600">GitHub</div>
+              <div class="bg-yellow-600/30 rounded-xl p-3 text-sm border border-yellow-500/50">HTML/CSS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-800 mobile-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Featured Projects</h2>
+      
+      <!-- Cloud Security Lab -->
+      <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
+          <div class="lg:w-2/3">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-2xl">🔒</div>
+              <h3 class="text-2xl font-bold text-blue-400">Cloud Security Lab – Azure IaaS</h3>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-red-400">🚩 Challenge:</span>
+                </h4>
+                <p class="text-gray-400">Building a secure, automated cloud environment to demonstrate real-world attack detection and infrastructure automation while working within Azure Student subscription limitations and public IP restrictions.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-green-400">💡 Solution:</span>
+                </h4>
+                <p class="text-gray-400">Created Infrastructure as Code with Terraform to deploy attacker/defender VMs in private network, implemented real-time network monitoring with Wireshark/tshark, automated security scanning with Nmap, and developed bootstrap scripts for automated tool installation.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-yellow-400">🎯 Impact:</span>
+                </h4>
+                <p class="text-gray-400">Successfully detected port scanning attacks in real-time, demonstrated automated infrastructure deployment reducing setup time by 90%, created reusable security monitoring patterns, and documented complete DevOps workflow for future projects.</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">Terraform</span>
+              <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Azure</span>
+              <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">Wireshark</span>
+              <span class="bg-red-900/50 text-red-200 px-3 py-2 rounded-full text-sm font-medium border border-red-700">Nmap</span>
+              <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">Linux</span>
+            </div>
+            
+            <div class="flex flex-wrap gap-3">
+              <a href="https://github.com/ridha-gn/cloud-security-lab" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg">
+                <span>📁</span> GitHub Repository
+              </a>
+              <a href="https://youtu.be/y_o1BtTfkjs" class="bg-gray-600 hover:bg-gray-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
+                <span>🎥</span> Demo Video
+              </a>
+            </div>
+          </div>
+          
+          <div class="lg:w-1/3 w-full">
+            <div class="bg-gray-600 rounded-xl w-full aspect-video flex items-center justify-center overflow-hidden border-2 border-gray-500 shadow-lg">
+              <img src="images/cloud-security-lab-screenshot.png" alt="Cloud Security Lab - Wireshark capture showing network traffic and attack detection" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- FastAPI CI/CD Project -->
+      <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
+          <div class="lg:w-2/3">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-2xl">🐳</div>
+              <h3 class="text-2xl font-bold text-green-400">FastAPI CI/CD Project</h3>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-red-400">🚩 Challenge:</span>
+                </h4>
+                <p class="text-gray-400">Building a complete CI/CD pipeline for a modern web application with containerization and automated deployment to demonstrate end-to-end DevOps workflow and container orchestration.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-green-400">💡 Solution:</span>
+                </h4>
+                <p class="text-gray-400">Developed a FastAPI application with RESTful endpoints, containerized with Docker and Docker Compose, automated testing and deployment with Jenkins pipelines, and deployed to Kubernetes cluster using Minikube with proper service configurations and health checks.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-yellow-400">🎯 Impact:</span>
+                </h4>
+                <p class="text-gray-400">Created a fully automated deployment pipeline reducing manual deployment time by 80%, implemented container best practices and security scanning, demonstrated comprehensive DevOps workflow, and established patterns for future microservices development.</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">Docker</span>
+              <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Kubernetes</span>
+              <span class="bg-yellow-900/50 text-yellow-200 px-3 py-2 rounded-full text-sm font-medium border border-yellow-700">Jenkins</span>
+              <span class="bg-cyan-900/50 text-cyan-200 px-3 py-2 rounded-full text-sm font-medium border border-cyan-700">Python</span>
+              <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">FastAPI</span>
+            </div>
+            
+            <a href="https://github.com/ridha-gn/fastapi-cicd-project" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg w-fit">
+              <span>📁</span> GitHub Repository
+            </a>
+          </div>
+          
+          <div class="lg:w-1/3 w-full">
+            <div class="bg-gray-600 rounded-xl w-full aspect-video flex items-center justify-center overflow-hidden border-2 border-gray-500 shadow-lg">
+              <img src="images/fastapi-cicd-screenshot.png" alt="FastAPI CI/CD Project - Docker and Kubernetes deployment setup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Network Monitoring System -->
+      <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
+          <div class="lg:w-2/3">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-2xl">📊</div>
+              <h3 class="text-2xl font-bold text-orange-400">Network Monitoring System</h3>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-red-400">🚩 Challenge:</span>
+                </h4>
+                <p class="text-gray-400">Creating a comprehensive monitoring solution for network infrastructure with real-time alerts and visualization for system performance tracking and proactive issue detection.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-green-400">💡 Solution:</span>
+                </h4>
+                <p class="text-gray-400">Implemented Prometheus for metrics collection and time-series data storage, Grafana for interactive dashboard visualization, Python scripts for custom metric collection, and automated alerting system with notification channels for critical events.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-yellow-400">🎯 Impact:</span>
+                </h4>
+                <p class="text-gray-400">Enabled real-time network performance monitoring with 99.9% uptime tracking, reduced incident response time by 70% with automated alerts, provided actionable insights through customized dashboards, and established monitoring baseline for future scaling.</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-orange-900/50 text-orange-200 px-3 py-2 rounded-full text-sm font-medium border border-orange-700">Prometheus</span>
+              <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">Grafana</span>
+              <span class="bg-cyan-900/50 text-cyan-200 px-3 py-2 rounded-full text-sm font-medium border border-cyan-700">Python</span>
+              <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">Monitoring</span>
+            </div>
+            
+            <a href="https://github.com/ridha-gn/network-monitoring-system" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg w-fit">
+              <span>📁</span> GitHub Repository
+            </a>
+          </div>
+          
+          <div class="lg:w-1/3 w-full">
+            <div class="bg-gray-600 rounded-xl w-full aspect-video flex items-center justify-center overflow-hidden border-2 border-gray-500 shadow-lg">
+              <img src="images/network-monitoring-screenshot.png" alt="Network Monitoring System - Prometheus and Grafana dashboard" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 mobile-padding">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Let's Connect</h2>
+      
+      <div class="bg-gray-800/50 rounded-2xl p-6 md:p-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <div class="text-center mb-8">
+          <p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+            Interested in collaborating on DevOps projects, discussing cloud infrastructure, 
+            or exploring potential opportunities? I'm always open to meaningful conversations 
+            about technology and innovation.
+          </p>
+        </div>
+        
+        <!-- Contact Methods -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto mb-12">
+          <a href="mailto:ridhagnounou.rg@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white p-5 md:p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3 shadow-lg border border-blue-500">
+            <span class="text-2xl">📧</span>
+            <span class="font-semibold">Email</span>
+            <span class="text-sm text-blue-200">ridhagnounou.rg@gmail.com</span>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/ridha-gn" class="bg-blue-800 hover:bg-blue-900 text-white p-5 md:p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3 shadow-lg border border-blue-700">
+            <span class="text-2xl">💼</span>
+            <span class="font-semibold">LinkedIn</span>
+            <span class="text-sm text-blue-200">/in/ridha-gn</span>
+          </a>
+          
+          <a href="https://github.com/ridha-gn" class="bg-gray-700 hover:bg-gray-800 text-white p-5 md:p-6 rounded-xl text-center btn-hover flex flex-col items-center justify-center gap-3 shadow-lg border border-gray-600">
+            <span class="text-2xl">💻</span>
+            <span class="font-semibold">GitHub</span>
+            <span class="text-sm text-gray-300">@ridha-gn</span>
+          </a>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="pt-8 border-t border-gray-700">
+          <h3 class="text-2xl font-semibold mb-6 text-center text-gray-300">Send me a message</h3>
+          <form class="max-w-md mx-auto space-y-4" id="contactForm">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+              <input type="text" id="name" name="name" required 
+                     class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Your Email</label>
+              <input type="email" id="email" name="email" required 
+                     class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Your Message</label>
+              <textarea id="message" name="message" rows="4" required 
+                        class="w-full bg-gray-700 border border-gray-600 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none"></textarea>
+            </div>
+            <button type="submit" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold btn-hover shadow-lg transition-all duration-300 flex items-center justify-center gap-2">
+              <span>📨</span> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 py-8 border-t border-gray-700 mobile-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-gray-400 text-lg">© 2025 Ridha Gnounou - DevOps & Cloud Engineer</p>
+      <p class="text-gray-500 text-sm mt-2">Built with passion for cloud technology and automation</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Contact form handling
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const message = formData.get('message');
+      
+      // Simulate form submission
+      const button = this.querySelector('button[type="submit"]');
+      const originalText = button.innerHTML;
+      
+      button.innerHTML = '📤 Sending...';
+      button.disabled = true;
+      
+      setTimeout(() => {
+        // Show success message
+        alert(`Thank you, ${name}! Your message has been sent successfully. I'll get back to you at ${email} soon.`);
+        
+        // Reset form
+        this.reset();
+        button.innerHTML = originalText;
+        button.disabled = false;
+      }, 1500);
+    });
+
+    // Mobile menu toggle (basic implementation)
+    document.querySelector('button.md\\:hidden')?.addEventListener('click', function() {
+      alert('Mobile menu would open here. In a full implementation, this would show/hide a mobile navigation menu.');
+    });
+  </script>
+
+</body>
+</html>
