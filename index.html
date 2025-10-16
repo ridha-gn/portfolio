@@ -78,6 +78,7 @@
         <div class="hidden md:flex space-x-8">
           <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
           <a href="#skills" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a>
+          <a href="#certifications" class="text-gray-300 hover:text-white transition-colors duration-300">Certifications</a>
           <a href="#projects" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
           <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
         </div>
@@ -94,9 +95,9 @@
   <!-- Hero Section -->
   <header class="min-h-screen flex items-center justify-center gradient-bg pt-16 mobile-padding">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center fade-in">
-      <!-- Profile Picture -->
-      <div class="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold shadow-2xl">
-        RG
+      <!-- Profile Picture - Updated with your photo -->
+      <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+        <img src="1759402792235.jpeg" alt="Ridha Gnounou" class="w-full h-full object-cover">
       </div>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 gradient-text">Ridha Gnounou</h1>
       <p class="text-xl md:text-2xl text-blue-200 mb-8 font-medium">DevOps & Cloud Security Engineer</p>
@@ -115,22 +116,22 @@
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- About Section - Updated with new text -->
   <section id="about" class="py-20 bg-gray-800 mobile-padding">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in gradient-text">About Me</h2>
       <div class="bg-gray-700/50 rounded-2xl p-8 md:p-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
         <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-6">
-          I'm a passionate <span class="text-blue-400 font-semibold">Telecom & IT student</span> with deep expertise in 
+          I'm a passionate <span class="text-blue-400 font-semibold">Telecom and IT student</span> with a growing interest in 
           <span class="text-green-400 font-semibold">Cloud Security</span> and 
-          <span class="text-purple-400 font-semibold">DevOps engineering</span>. 
-          I specialize in building automated infrastructure, implementing robust security monitoring, 
-          and creating scalable solutions using cutting-edge technologies.
+          <span class="text-purple-400 font-semibold">DevOps</span>. 
+          I'm focused on learning how to build automated infrastructure, implement secure and reliable systems, 
+          and create scalable solutions using modern cloud technologies.
         </p>
         <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
-          My focus is on <span class="text-orange-400 font-semibold">Infrastructure as Code</span>, 
-          cloud security best practices, and developing professional projects that solve 
-          real-world engineering challenges in cloud environments.
+          My main areas of interest include <span class="text-orange-400 font-semibold">Infrastructure as Code (IaC)</span>, 
+          cloud security fundamentals, and developing hands-on projects that solve real-world challenges 
+          and help me grow as an engineer.
         </p>
       </div>
     </div>
@@ -201,8 +202,89 @@
     </div>
   </section>
 
+  <!-- New Certifications Section -->
+  <section id="certifications" class="py-20 bg-gray-800 mobile-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Certifications</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Certification 1 -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-700/50 rounded-2xl p-6 h-full border border-gray-600 backdrop-blur-sm">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="text-3xl">🏆</div>
+              <h3 class="text-xl font-bold text-blue-400">Azure Fundamentals</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Microsoft Certified: Azure Fundamentals (AZ-900)</p>
+            <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500">
+              <img src="images/azure-fundamentals-cert.png" alt="Azure Fundamentals Certification" class="w-full h-48 object-cover">
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-400">Issued: 2024</span>
+              <span class="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm">Microsoft</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-700/50 rounded-2xl p-6 h-full border border-gray-600 backdrop-blur-sm">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="text-3xl">🏆</div>
+              <h3 class="text-xl font-bold text-green-400">Terraform Associate</h3>
+            </div>
+            <p class="text-gray-300 mb-4">HashiCorp Certified: Terraform Associate</p>
+            <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500">
+              <img src="images/terraform-cert.png" alt="Terraform Certification" class="w-full h-48 object-cover">
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-400">Issued: 2024</span>
+              <span class="bg-green-900/50 text-green-200 px-3 py-1 rounded-full text-sm">HashiCorp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-700/50 rounded-2xl p-6 h-full border border-gray-600 backdrop-blur-sm">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="text-3xl">🏆</div>
+              <h3 class="text-xl font-bold text-purple-400">Docker Certified</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Docker Certified Associate</p>
+            <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500">
+              <img src="images/docker-cert.png" alt="Docker Certification" class="w-full h-48 object-cover">
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-400">Issued: 2023</span>
+              <span class="bg-purple-900/50 text-purple-200 px-3 py-1 rounded-full text-sm">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 4 -->
+        <div class="fade-in card-hover">
+          <div class="bg-gray-700/50 rounded-2xl p-6 h-full border border-gray-600 backdrop-blur-sm">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="text-3xl">🏆</div>
+              <h3 class="text-xl font-bold text-orange-400">Linux Foundation</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Linux Foundation Certified System Administrator</p>
+            <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500">
+              <img src="images/linux-cert.png" alt="Linux Certification" class="w-full h-48 object-cover">
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-sm text-gray-400">Issued: 2023</span>
+              <span class="bg-orange-900/50 text-orange-200 px-3 py-1 rounded-full text-sm">Linux Foundation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gray-800 mobile-padding">
+  <section id="projects" class="py-20 bg-gray-900 mobile-padding">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Featured Projects</h2>
       
@@ -367,7 +449,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-900 mobile-padding">
+  <section id="contact" class="py-20 bg-gray-800 mobile-padding">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Let's Connect</h2>
       
