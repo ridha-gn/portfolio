@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ridha Gnounou | DevOps & Cloud Engineer</title>
-  <meta name="description" content="Ridha Gnounou - DevOps & Cloud Engineer specializing in Infrastructure as Code, Azure, Docker, Kubernetes. Building automated cloud infrastructure and security solutions.">
-  <meta name="keywords" content="DevOps, Cloud Engineer, Azure, Docker, Kubernetes, Cloud Security, Infrastructure as Code, CI/CD">
+  <title>Ridha Gnounou | DevOps & Cloud Security</title>
+  <meta name="description" content="Ridha Gnounou - DevOps & Cloud Security specializing in Infrastructure as Code, Azure, Docker, Kubernetes. Building automated cloud infrastructure and security solutions.">
+  <meta name="keywords" content="DevOps, Cloud Security, Azure, Docker, Kubernetes, Cloud Security, Infrastructure as Code, CI/CD">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,12 +95,12 @@
   <!-- Hero Section -->
   <header class="min-h-screen flex items-center justify-center gradient-bg pt-16 mobile-padding">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center fade-in">
-      <!-- Profile Picture - Fixed path to images folder -->
+      <!-- Profile Picture - Using photo from images folder -->
       <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-2xl">
         <img src="images/1759402792235.jpeg" alt="Ridha Gnounou" class="w-full h-full object-cover">
       </div>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 gradient-text">Ridha Gnounou</h1>
-      <p class="text-xl md:text-2xl text-blue-200 mb-8 font-medium">DevOps & Cloud Security Engineer</p>
+      <p class="text-xl md:text-2xl text-blue-200 mb-8 font-medium">DevOps & Cloud Security</p>
       <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12">
         Building secure, automated cloud infrastructure with <span class="text-blue-400 font-semibold">Infrastructure as Code</span>, 
         containerization, and modern DevOps practices.
@@ -324,13 +324,77 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center fade-in gradient-text">Featured Projects</h2>
       
+      <!-- Azure Storage Security Scanner -->
+      <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
+          <div class="lg:w-2/3">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-2xl">🛡️</div>
+              <h3 class="text-2xl font-bold text-blue-400">Azure Storage Security Scanner</h3>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-red-400">🚩 Challenge:</span>
+                </h4>
+                <p class="text-gray-400">Identifying and mitigating security risks in Azure Storage accounts to prevent data breaches and unauthorized access in cloud environments.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-green-400">💡 Solution:</span>
+                </h4>
+                <p class="text-gray-400">Developed a Python-based security scanner that automatically audits Azure Storage accounts for misconfigurations, checks for public access, validates encryption settings, and identifies potential security vulnerabilities using Azure SDK and REST APIs.</p>
+              </div>
+              <div class="bg-gray-600/50 rounded-xl p-4 border border-gray-500">
+                <h4 class="font-semibold text-gray-300 mb-2 flex items-center gap-2">
+                  <span class="text-yellow-400">🎯 Impact:</span>
+                </h4>
+                <p class="text-gray-400">Automated security assessment process reducing manual review time by 85%, identified critical misconfigurations in test environments, provided actionable security recommendations, and established baseline security standards for Azure Storage.</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="bg-blue-900/50 text-blue-200 px-3 py-2 rounded-full text-sm font-medium border border-blue-700">Python</span>
+              <span class="bg-green-900/50 text-green-200 px-3 py-2 rounded-full text-sm font-medium border border-green-700">Azure SDK</span>
+              <span class="bg-purple-900/50 text-purple-200 px-3 py-2 rounded-full text-sm font-medium border border-purple-700">REST API</span>
+              <span class="bg-red-900/50 text-red-200 px-3 py-2 rounded-full text-sm font-medium border border-red-700">Security</span>
+              <span class="bg-gray-600 text-gray-200 px-3 py-2 rounded-full text-sm font-medium border border-gray-500">Automation</span>
+            </div>
+            
+            <div class="flex flex-wrap gap-3">
+              <a href="https://github.com/ridha-gn/azure-storage-security-scanner" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2 shadow-lg">
+                <span>📁</span> GitHub Repository
+              </a>
+              <a href="https://youtu.be/ic6CjzUQe8o" class="bg-gray-600 hover:bg-gray-700 text-white px-5 py-3 rounded-lg font-medium btn-hover flex items-center gap-2">
+                <span>🎥</span> Demo Video
+              </a>
+            </div>
+          </div>
+          
+          <div class="lg:w-1/3 w-full">
+            <div class="space-y-4">
+              <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500 shadow-lg">
+                <img src="images/paas1.webp" alt="Azure Storage Security Scanner - Configuration Check" class="w-full h-32 object-cover hover:scale-105 transition-transform duration-300">
+              </div>
+              <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500 shadow-lg">
+                <img src="images/paas2.webp" alt="Azure Storage Security Scanner - Security Findings" class="w-full h-32 object-cover hover:scale-105 transition-transform duration-300">
+              </div>
+              <div class="bg-gray-600 rounded-xl overflow-hidden border-2 border-gray-500 shadow-lg">
+                <img src="images/paas3.webp" alt="Azure Storage Security Scanner - Results Summary" class="w-full h-32 object-cover hover:scale-105 transition-transform duration-300">
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
       <!-- Cloud Security Lab -->
       <article class="bg-gray-700/50 rounded-2xl p-6 md:p-8 mb-12 fade-in card-hover backdrop-blur-sm border border-gray-600">
         <div class="flex flex-col lg:flex-row gap-6 md:gap-8 items-start">
           <div class="lg:w-2/3">
             <div class="flex items-center gap-3 mb-4">
               <div class="text-2xl">🔒</div>
-              <h3 class="text-2xl font-bold text-blue-400">Cloud Security Lab – Azure IaaS</h3>
+              <h3 class="text-2xl font-bold text-green-400">Cloud Security Lab – Azure IaaS</h3>
             </div>
             
             <div class="space-y-4 mb-6">
@@ -385,7 +449,7 @@
           <div class="lg:w-2/3">
             <div class="flex items-center gap-3 mb-4">
               <div class="text-2xl">🐳</div>
-              <h3 class="text-2xl font-bold text-green-400">FastAPI CI/CD Project</h3>
+              <h3 class="text-2xl font-bold text-purple-400">FastAPI CI/CD Project</h3>
             </div>
             
             <div class="space-y-4 mb-6">
@@ -485,7 +549,7 @@
 
   <footer class="bg-gray-800 py-8 border-t border-gray-700 mobile-padding">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-      <p class="text-gray-400 text-lg">© 2025 Ridha Gnounou - DevOps & Cloud Engineer</p>
+      <p class="text-gray-400 text-lg">© 2025 Ridha Gnounou - DevOps & Cloud Security</p>
       <p class="text-gray-500 text-sm mt-2">Built with passion for cloud technology and automation</p>
     </div>
   </footer>
