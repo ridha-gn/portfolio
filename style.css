@@ -260,4 +260,26 @@ ul{list-style:none}
   .about-counters{grid-template-columns:repeat(3,1fr);gap:0.75rem}
   .counter-box .num{font-size:1.5rem}
   .terminal{width:100%;max-width:400px;text-align:left}
+  .kodekloud-row{grid-template-columns:repeat(3,1fr)}
 }
+
+/* === PROJECT CARD — New compact format === */
+.proj-problem{font-size:0.85rem;color:var(--text2);line-height:1.6;margin-bottom:0.5rem;font-style:italic}
+.proj-stack{font-size:0.78rem;color:var(--text2);margin-bottom:0.6rem}
+.proj-stack strong{color:var(--text);font-weight:600}
+.proj-bullets{list-style:disc;padding-left:1.2rem;margin-bottom:0.5rem}
+.proj-bullets li{font-size:0.82rem;color:var(--text2);line-height:1.6;margin-bottom:0.3rem}
+
+/* === KODEKLOUD GROUP === */
+.kodekloud-group{padding:2rem;border-radius:16px;border:1px solid var(--border);background:var(--surface)}
+.kodekloud-row{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.kodekloud-item{display:flex;flex-direction:column;align-items:center;gap:0.5rem;text-align:center}
+.kodekloud-img{width:80px;height:80px;object-fit:contain;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,0.02);padding:4px}
+.kodekloud-item span{font-size:0.75rem;color:var(--text2);font-weight:500}
+
+/* === CERT PLACEHOLDER & IN-PROGRESS === */
+.cert-placeholder{height:240px;border-bottom:1px solid var(--border)}
+.cert-in-progress{border-color:rgba(251,191,36,0.2);position:relative}
+.cert-in-progress::after{content:'IN PROGRESS';position:absolute;top:12px;right:12px;font-size:0.6rem;
+  font-weight:700;letter-spacing:1px;padding:3px 10px;border-radius:50px;
+  background:rgba(251,191,36,0.15);color:var(--amber);border:1px solid rgba(251,191,36,0.3)}
