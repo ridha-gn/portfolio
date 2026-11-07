@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1226"/>
+      <stop offset="100%" stop-color="#060b18"/>
+    </linearGradient>
+    <linearGradient id="helmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#326ce5"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgGrad)" rx="12"/>
+  
+  <!-- Outer Tech Ring -->
+  <circle cx="200" cy="115" r="72" fill="none" stroke="rgba(50, 108, 229, 0.25)" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="200" cy="115" r="62" fill="rgba(50, 108, 229, 0.08)" stroke="url(#helmGrad)" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- Kubernetes Helm Wheel -->
+  <g transform="translate(200, 115) scale(0.95)" fill="#326ce5">
+    <!-- Center Hub -->
+    <circle cx="0" cy="0" r="14" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="8" fill="#326ce5"/>
+    
+    <!-- 7 Spokes of the K8s Helm Wheel -->
+    <!-- Spoke 1 (0 deg) -->
+    <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+    <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+    <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+
+    <!-- Spoke 2 (51.4 deg) -->
+    <g transform="rotate(51.43)">
+      <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+    </g>
+
+    <!-- Spoke 3 (102.8 deg) -->
+    <g transform="rotate(102.86)">
+      <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+    </g>
+
+    <!-- Spoke 4 (154.3 deg) -->
+    <g transform="rotate(154.29)">
+      <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+    </g>
+
+    <!-- Spoke 5 (205.7 deg) -->
+    <g transform="rotate(205.71)">
+      <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+    </g>
+
+    <!-- Spoke 6 (257.1 deg) -->
+    <g transform="rotate(257.14)">
+      <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+    </g>
+
+    <!-- Spoke 7 (308.6 deg) -->
+    <g transform="rotate(308.57)">
+      <path d="M-4,-14 L4,-14 L6,-34 L-6,-34 Z" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="7" fill="#ffffff"/>
+      <circle cx="0" cy="-38" r="4" fill="#326ce5"/>
+    </g>
+
+    <!-- Inner Wheel Rim -->
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#ffffff" stroke-width="5"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="200" y="215" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="3">CKA</text>
+  <text x="200" y="238" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="600" fill="#00f0ff" text-anchor="middle" letter-spacing="1.5">CERTIFIED KUBERNETES ADMINISTRATOR</text>
+  <text x="200" y="260" font-family="'Space Grotesk', system-ui, sans-serif" font-size="9" font-weight="500" fill="#94a3b8" text-anchor="middle" letter-spacing="1">THE LINUX FOUNDATION · CNCF</text>
+</svg>
